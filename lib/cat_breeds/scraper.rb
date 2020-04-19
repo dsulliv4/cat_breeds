@@ -2,8 +2,9 @@ class CatBreeds::Scraper
 
 	def self.scrape_index(url) #creates and returns an array of hashes which contain cat breeds and page urls
 		cat_breeds = []
-		doc = Nokogiri::HTML(open(url))
-		breeds = doc.css("#hub-breed-list-container ul li a")
+		doc = Nokogiri::HTML(open (www.cat-time.com/cat-breeds))
+		breeds = doc.css("#list-item")
+		##check this out tomorrow 
 		breeds.each do |b|
 			breed = {}
 			breed[:name] = b.text
@@ -15,7 +16,7 @@ class CatBreeds::Scraper
 
 	def self.scrape_profile(url) #creates and returns a hash of a cat breed with more information for the user to view
 		breed = {}
-		doc = Nokogiri::HTML(open(url))
+		doc = Nokogiri::HTML(open(www.cattime.com/cat-breeds))
 		breed[:blurb] = doc.css("#breed-detail p").text.gsub("\n","").gsub("\t","").gsub("\r","").strip
 		breed[:fun_fact] = doc.css(".interesting-breed-fact p").text.gsub("\n","").gsub("\t","").gsub("\r","").strip
 		breed[:description] = doc.css("#overview .richtext  p").text.gsub("\n","").gsub("\t","").gsub("\r","").gsub(" If the video doesn't start playing momentarily, please install the latest version of Flash.","").strip
