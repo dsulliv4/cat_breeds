@@ -1,7 +1,7 @@
 class CatBreeds::Scraper
 
   def self.scrape 
-    @doc = Nokogiri::HTML(open("http://www.packopumps.com/en/products/different-kind-of-pumps"))
+    @doc = Nokogiri::HTML(open("https://cattime.com/cat-breeds"))
     @scraping_block = @doc.css("div.listingByBlockContainer div.categoryBlock")
   end
 
