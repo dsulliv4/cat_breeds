@@ -5,3 +5,8 @@ require_relative "./cat_breeds/cli"
 require 'open-uri'
 require 'pry'
 require 'nokogiri'
+
+module CatBreeds 
+  class Error < StandardError; end
+end 
+
