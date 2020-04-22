@@ -1,7 +1,7 @@
-require_relative "./cat_breeds/version"
-require_relative "./cat_breeds/breeds"
-require_relative "./cat_breeds/scraper"
-require_relative "./cat_breeds/cli"
+require_relative "./version"
+require_relative "./breeds"
+require_relative "./scraper"
+require_relative "./cli"
 require 'open-uri'
 require 'pry'
 require 'nokogiri'

@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require_relative '../lib/environment'
+require_relative '../lib/cat_breeds/environment'
 
 CatBreeds::Cli.new.call
 
