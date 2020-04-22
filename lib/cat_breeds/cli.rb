@@ -1,6 +1,6 @@
 class CatBreeds::Cli 
 
-  def welcome
+  def call
     puts "__________________________________________________________________"
     puts " "
     puts "---------------- Welcome to the Cat Catalogue -------------------"
