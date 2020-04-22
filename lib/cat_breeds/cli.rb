@@ -9,9 +9,11 @@ class CatBreeds::Cli
     puts "Please choose one of the following options"
     puts "***************************************"
 
-    puts " __ Please type 'show list of breed types' for the full list of cat breeds"
+    puts " __ Please type 'show list' for the full list of cat breeds"
 
   puts " __ Type 'close' to exit the application"
   
   
   end
+  
+end 
