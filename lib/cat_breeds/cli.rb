@@ -71,7 +71,7 @@ def user_input
   def select_breed
 
     print 'Please select a breed: '
-     breed = gets.chomp.to_i 
+     breed = gets.chomp.to_i-1 
      selected_breed = CatBreeds::Breeds.all[breed]
 
 
