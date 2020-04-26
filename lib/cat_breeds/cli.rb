@@ -63,7 +63,7 @@ def user_input
  
     
    def list_breeds
-        CatBreeds::Scraper.scrape_breeds
+        CatBreeds::Scraper.scrape_breeds if CatBreeds::Breeds.all.empty?
         CatBreeds::Breeds.all.each.with_index do |breed, index|
           puts "#{index + 1} - #{breed.name}"
     end 
