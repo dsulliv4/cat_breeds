@@ -1,18 +1,15 @@
-Hello World
+
 
 # CatBreeds
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cat_breeds`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This CLI gem scrapes an extensive list of cat breeds for users and provides them with characteristics about them. 
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
 gem 'cat_breeds'
-```
+
 
 And then execute:
 
@@ -24,7 +21,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. Run cat_breeds by running ./bin/cat-breeds
+2. Type "show list" to view the list of cat breeds.
+3. Type in a breeds corresponding number to get information about said breed. 
+4. Type "close" to exit the application.
 
 ## Development
 
